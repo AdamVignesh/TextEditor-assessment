@@ -1,0 +1,30 @@
+﻿@model IEnumerable<TextEditor__assessment.Models.file>
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<h1>View</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                file text
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td>
+                @ViewBag.text
+            </td>
+            @*<td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>*@
+        </tr>
+
+    </tbody>
+</table>
